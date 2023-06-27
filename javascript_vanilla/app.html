@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
+            rel="stylesheet"
+    />
+    <script src="index.js" defer></script>
+    <title>Tic-Tac-Toc</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+          <h2>In order to play, let's enter the names with the letters of the participants</h2>
+          <label for="playerOne">Name Player One:</label>
+          <input type="text" maxlength="10" id="playerOne" placeholder="Enter name" autocomplete="off">
+          <label for="LyricsrOne">Player One Lyrics</label>
+          <input type="text" maxlength="1" id="letterOne" placeholder="Enter Lyrics" autocomplete="off">
+          <h1>VS</h1>
+          <label for="name">Name Player Two:</label>
+          <input type="text" maxlength="10" id="playerTwo" placeholder="Enter name" autocomplete="off">
+          <label for="letterTwo">Player Two Lyrics</label>
+          <input type="text" maxlength="1" id="letterTwo" placeholder="Enter Lyrics" autocomplete="off"></br>
+          <input type="submit" onclick="emptyFields()" id="play-game" onclick="obtainValue()" value="Play">
+        </div>
+        <div class="column">
+          <h1>Let's Play Good luck to both of you!</h1>
+          <label for="result">Player One:</label>
+          <h1 id="result"></h1>
+          <label for="result2">Letter player one</label>
+          <h1 id="result2"></h1>
+          <label for="result1">Player Two:</label>
+          <h1 id="result1"></h1>
+          <label for="result3">Letter player Two</label>
+          <h1 id="result3"></h1>
+          <p id = "game-information" class="game-information"></p>
+            <div class="game-grid">
+
+                <div class="chart"></div>
+                <div class="chart"></div>
+                <div class="chart"></div>
+                <div class="chart"></div>
+                <div class="chart"></div>
+                <div class="chart"></div>
+                <div class="chart"></div>
+                <div class="chart"></div>
+                <div class="chart"></div>
+            </div><br>
+            <div id ="game-button" class="game-button">Play again</div>
+        </div>
+      </div>
+</body>
+</html>

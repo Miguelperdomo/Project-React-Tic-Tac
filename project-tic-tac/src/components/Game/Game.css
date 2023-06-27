@@ -1,0 +1,47 @@
+.Game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    margin: -8rem auto;
+    width: 40%;
+    height: 70vh;
+    color: white;
+    font-size: 8rem;
+}
+
+.Game-cell {
+    border: solid 4px red;
+    border-radius: 20px;
+    width: 180px;
+    height: 180px;
+}
+
+.printData {
+    position: relative;
+    left: -780px;
+}
+
+.buttonPlay{
+    display: inline-block;
+    font-family: 'Silkscreen', cursive;
+    padding: 10px 20px;
+    margin: 6px;
+    background-color: #FFC107; 
+    color: #000000;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.buttonPlay:hover {
+    background-color: #FFA000; 
+    transform: translateY(5px); 
+  }
+  .buttonPlay:active {
+    background-color: #FF8F00; /* Color de fondo al hacer clic */
+  }
